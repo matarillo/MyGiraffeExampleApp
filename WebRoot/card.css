@@ -1,0 +1,67 @@
+body {
+	position: relative;
+	max-width: 690px;
+	width: 100%;
+	position:relative;
+}
+.custom-snippet-link {
+	display: flex;
+	margin-bottom: 1em;
+	border-radius: 10px;
+	border: 1px solid #eee;
+	box-shadow: 0 1px 8px rgba(0,0,0,0.1);
+	transition: all .1s ease-in;
+}
+.custom-snippet-link .custom-snippet-eyecatch {
+	width: 175px;
+	flex-shrink: 0;
+	position: relative;
+}
+.custom-snippet-link .custom-snippet-eyecatch::before {
+	content: "";
+	display: block;
+	padding-top: 75%;
+}
+.custom-snippet-link .custom-snippet-eyecatch img {
+	display: block;
+	-o-object-fit: cover;
+	object-fit: cover;
+	border-radius: 10px 0 0 10px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+}
+.custom-snippet-link .custom-snippet-information {
+	padding: 20px 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.custom-snippet-link .custom-snippet-information .custom-snippet-heading {
+	font-size: 1rem;
+	margin-top: 0;
+	margin-bottom: .3em;
+	line-height: 1.3;
+	color: #111;
+	letter-spacing: 0;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	text-overflow: ellipsis;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+}
+.custom-snippet-link .custom-snippet-information .custom-snippet-description {
+	font-size: 0.75rem;
+	color: #aaa;
+	margin-bottom: 0;
+	line-height: 1.5;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	text-overflow: ellipsis;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+}
