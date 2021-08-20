@@ -13,7 +13,7 @@ type Message =
     }
 
 module View =
-    open GiraffeViewEngine
+    open Giraffe.ViewEngine
 
     let layout (content: XmlNode list) =
         html [] [

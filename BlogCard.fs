@@ -38,7 +38,7 @@ let private schemaNotAllowed url = {
 }
 
 module View =
-    open GiraffeViewEngine
+    open Giraffe.ViewEngine
 
     let private layout (content: XmlNode list) =
         html [] [
